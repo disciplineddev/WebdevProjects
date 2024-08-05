@@ -5,12 +5,11 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const Register = () => {
-  const [name, setName] = useState("Ryan");
-  const [email, setEmail] = useState("ryan@gmail.com");
+  const [name, setName] = useState("Dev");
+  const [email, setEmail] = useState("disciplineddev1994@gmail.com");
   const [password, setPassword] = useState("rrrrrr");
 
   const handleClick = async (e) => {
-    // console.log(name, email, password);
     try {
       e.preventDefault();
       const { data } = await axios.post("/register", {
